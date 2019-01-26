@@ -1,0 +1,453 @@
+* {
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+}
+
+html, body, section, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+  -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+  color: #fff;
+  background: #374046;
+  overflow: hidden;
+}
+
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* scrollbar Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+}
+
+/* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+}
+
+/* scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, .3);
+}
+
+/*----------------------- Secciones -----------------------*/
+
+section {
+  width:400%;  
+}
+
+.page {
+  position: absolute;
+}
+
+#p1 {
+  left: 0;
+}
+
+#p2 {
+  left: 100%;
+  background: #FF5722;
+}
+
+#p3 {
+  left: 200%;
+  background: #00AEE6;
+}
+
+#p4 {
+  left: 300%;
+  background: #AE028C;
+}
+
+ul {
+ position: fixed; 
+ z-index: 1;
+}
+#t1:target .page#p1 {
+    transform: translateX(0);
+}
+#t2:target .page#p2 {
+    transform: translateX(-90%);
+}
+#t3:target .page#p3 {
+    transform: translateX(-190%);
+}
+#t4:target .page#p4 {
+    transform: translateX(-290%);
+}
+
+#t2:target .page#p1, 
+#t3:target .page#p1,
+#t4:target .page#p1 {
+  background: black;
+}
+
+#t2:target .page#p1 .icon, 
+#t3:target .page#p1 .icon,
+#t4:target .page#p1 .icon {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.icon {
+  color: #fff;
+  font-size: 32px;
+  display: block;
+}
+
+ul .icon:hover {
+  opacity: 0.6;
+}
+
+#p1 .icon .title {
+  margin-bottom: 20px;
+}
+
+#t2:target ul .icon,
+#t3:target ul .icon,
+#t4:target ul .icon {
+  transform: scale(.6); 
+  transition-delay: .25s;
+}
+
+#t2:target #dos {
+  transform: scale(1.2) !important;
+}
+
+#t3:target #tres {
+  transform: scale(1.2) !important;
+}
+
+#t4:target #cuatro {
+  transform: scale(1.2) !important;
+}
+
+/*----------------------- Alunas Weas -----------------------*/
+
+ul {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /*right: 0;*/
+  margin: auto;
+  height: 280px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+ }
+
+ul li {
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: open sans, sans-serif;
+}
+
+/*----------------------- Titulos Secciones -----------------------*/
+
+.title {
+  font-family: open sans, sans-serif;
+  display: block;
+}
+
+.title {
+  font-size: 38px;
+}
+
+/*----------------------- Secciones e Iconos Laterales -----------------------*/
+
+.page .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  left: 0;
+  width: 270px;
+  height: 170px;
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  transform: translateX(360%);
+  line-height: 1.3;
+}
+
+.page#p1 .icon {
+  height: 220px;
+}
+
+.page#p1 .icon {
+  transform: translateX(0) !important;
+}
+
+#t2:target .page#p2 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+#t3:target .page#p3 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+#t4:target .page#p4 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+/*----------------------- Creditos/Copyright -----------------------*/
+
+.credit{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+}
+
+.credit a {
+	color: #fff
+}
+
+/*----------------------- A Href Registrarse -----------------------*/
+
+.registrarse{
+	position: absolute;
+	bottom: 20.5%;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+}
+
+.registrarse a {
+	color: #fff
+}
+
+
+/*----------------------- Iconos T -----------------------*/
+
+.icon2 {
+  position: absolute;
+  top: 0;
+  bottom: 70%;
+  right: 5%;
+  left: 0;
+  width: 270px;
+  height: 170px;
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  transform: translateX(360%);
+  line-height: 1.3;
+}
+
+.icon2 {
+  height: 220px;
+}
+
+.icon2 {
+  transform: translateX(0) !important;
+}
+
+/*----------------------- Logo MB Home -----------------------*/
+
+.logo {background-image: url(../img/logo_01.svg); background-repeat: no-repeat;}
+
+.iconlogo {
+  position: absolute;
+  top: 0%;
+  bottom: 50%;
+  right: 0%;
+  left: 0%;
+  width: 270px;
+  height: 170px;
+  margin: auto;
+  font-size: 80px;
+  transform: translateX(360%);
+  line-height: 1.3;
+}
+
+.iconlogo {
+  height: 220px;
+}
+
+.iconlogo {
+  transform: translateX(0) !important;
+}
+
+.txth {
+  position: absolute;
+  top: 40%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*----------------------- Boton Iniciar Sesion -----------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+.posicion {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.button{
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.button {
+  background: #333;
+  color: #ccc;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  transition: .6s;
+  overflow: hidden;
+}
+.button:focus {
+  outline: 0;
+}
+.button:before {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}
+.button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}
+.button:hover {
+  background: #0070C4;
+  cursor: pointer;
+}
+.button:hover:before {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: .7s;
+}
+.button:hover:after {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+}
+
+/*----------------------- Contenedores -----------------------*/
+
+.contgral {width: 100%;}
+.contauto {width:auto;}
+.cont100 {width: 100%;}
+.cont90 {width: 90%;}
+.cont80 {width: 80%;}
+.cont70 {width: 70%;}
+.cont50 {width: 50%;}
+.cont333 {width: 31.7%;}
+.cont35 {width: 35%;}
+.cont30 {width: 30%;}
+.cont20 {width: 20%;}
+.cont10 {width: 10%;}
+.cont5 {width: 5%;}
+.cont3 {width: 4%;}
+.cont2 {width: 2%;}
+/*----------------------- Alturas -----------------------*/
+
+.hauto {height: auto;}
+.h100p {height: 100%;}
+.h88p {height: 88%;}
+.h10 {height: 10px;}
+.h20 {height: 25%;}
+.h20px {height: 20px;}
+.h40px {height: 40px;}
+.h50 {height: 50px;}
+.h120 {height: 120px;}
+.h110 {height: 110px;}
+.h100px {height: 100px;}
+.h70px{height: 70px;}
+
+/*----------------------- Direcciones -----------------------*/
+
+.fl {float: left;}
+.fr {float: right;}
+
+/*----------------------- Texto Tienda -----------------------*/
+
+.txtt {
+    font-size: 25px;
+    text-align: center;
+}
+
+.gradient{
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.cvl{display: flex;
+    align-content: center; 
+    justify-content: center;
+    align-items: center;}
+
+/*----------------------- Colores -----------------------*/
+
+.naranja {background: #FF5722;}
+.celeste {background: #00AEE6}
+.magenta {background: #AE028C}
+
+.producto{
+    margin-right: 50px;
+    margin-left: 200px;
+    border-radius: 6px;}
+
+.titlep {
+    font-family: open sans, sans-serif;
+    display: block;
+    color: white;
+    font-size: 25px;
+}
+
+.pad {margin-top:25px;}
+
+.box                { width: 100%; height: 75%; float: left; margin: 0 20px 0 0; }
+
+.box-one            { overflow: hidden; }
+.box-two            { overflow: auto; }
+.box-three          { overflow: scroll; }
+
+  .block {
+    background: rgba(0, 0, 0, .2);
